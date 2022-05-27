@@ -1,0 +1,6 @@
+@media (max-width: 560px) {
+  .loginImage {
+    width: 12rem;
+    height: auto;
+  }
+}

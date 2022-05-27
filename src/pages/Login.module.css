@@ -1,0 +1,11 @@
+.loginBox {
+  transform: translate(-50%, -50%);
+}
+
+.avatar {
+  top: -56px;
+  left: calc(50% - 56px);
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
