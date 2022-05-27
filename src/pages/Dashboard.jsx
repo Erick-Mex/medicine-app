@@ -7,7 +7,7 @@ export default function Dashboard() {
   const { logOut } = useAuth();
 
   return (
-    <div>
+    <div className='h-full min-h-full'>
       <PatientGrid />
       <button onClick={logOut}> Cerrar sesion</button>
     </div>

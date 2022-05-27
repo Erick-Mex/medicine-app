@@ -8,8 +8,8 @@ import Dashboard from "./Dashboard";
 
 function App() {
   return (
-    <HashRouter>
-      <main className="bg-primary h-full font-sans">
+    <main className="bg-primary h-full font-sans">
+      <HashRouter>
         <AuthProvider>
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -20,8 +20,8 @@ function App() {
             {/* TODO: Make a route to see the details of a patient */}
           </Routes>
         </AuthProvider>
-      </main>
-    </HashRouter>
+      </HashRouter>
+    </main>
   );
 }
 
