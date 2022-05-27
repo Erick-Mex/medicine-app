@@ -6,7 +6,6 @@ export default function Dashboard() {
 
   const { logOut } = useAuth();
 
-
   return (
     <div>
       <PatientGrid />

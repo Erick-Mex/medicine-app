@@ -9,7 +9,7 @@ import Dashboard from "./Dashboard";
 function App() {
   return (
     <HashRouter>
-      <main className="bg-primary h-screen font-sans">
+      <main className="bg-primary h-full font-sans">
         <AuthProvider>
           <Routes>
             <Route path="/" element={<LandingPage />} />

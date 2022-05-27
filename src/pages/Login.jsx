@@ -18,7 +18,7 @@ export default function Login() {
     try {
       setError(false);
       setLoading(true);
-      await logIn(email.current.value, password.current.value);
+      await logIn(email.current.value.toLowerCase(), password.current.value);
       navigate('/dashboard');
     } catch (err) {
       setError(true);

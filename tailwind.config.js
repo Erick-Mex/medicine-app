@@ -7,6 +7,9 @@ module.exports = {
         'secondary': '#FF94CC',
         'primary-buttons': '#A239EA',
         'secondary-buttons': '#5C33F6'
+      },
+      gridTemplateColumns: {
+        'auto-fill': 'repeat(auto-fill, 350px)'
       }
     },
   },

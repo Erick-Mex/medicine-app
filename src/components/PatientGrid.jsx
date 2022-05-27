@@ -18,10 +18,10 @@ Datos de un paciente:
 
 export default function PatientGrid() {
   return (
-    <ul className="">
+    <div className="grid grid-cols-[100%] sm:grid-cols-auto-fill gap-10 p-10 justify-center">
       {Patients.map(patient => (
         <PatientCard key={patient.Id} patient={patient} />
       ))}
-    </ul>
+    </div>
   );
 }
