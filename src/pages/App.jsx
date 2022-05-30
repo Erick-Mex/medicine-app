@@ -5,10 +5,11 @@ import PrivateRoute from "../components/PrivateRoute";
 import LandingPage from "./LandingPage";
 import Login from "./Login";
 import Dashboard from "./Dashboard";
+import PatientDetails from "./PatientDetails";
 
 function App() {
   return (
-    <main className="bg-primary h-full font-sans">
+    <main className="bg-primary font-sans">
       <HashRouter>
         <AuthProvider>
           <Routes>
@@ -17,7 +18,9 @@ function App() {
             <Route path="/dashboard" element={<PrivateRoute />}>
               <Route path="" element={<Dashboard />} />
             </Route>
-            {/* TODO: Make a route to see the details of a patient */}
+            <Route path="/patient/:idPatient" element={<PrivateRoute />}>
+              <Route path="" element={<PatientDetails />} />
+            </Route>
           </Routes>
         </AuthProvider>
       </HashRouter>

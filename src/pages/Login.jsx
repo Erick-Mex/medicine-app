@@ -22,6 +22,7 @@ export default function Login() {
       navigate('/dashboard');
     } catch (err) {
       setError(true);
+      password.current.value = "";
     }
     setLoading(false);
   }
